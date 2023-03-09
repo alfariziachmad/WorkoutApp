@@ -1,0 +1,110 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* layout */
+:root {
+  --primary: #0ea5e9;
+  --error: #ef4444;
+  --textprimary: #0f172a;
+  --textsecondary: #1e293b;
+}
+body {
+  color: var(--textsecondary);
+  background: #f8fafc;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: var(--textprimary);
+  text-decoration: none;
+  transition: 0.25s;
+}
+header a:hover {
+  color: var(--primary);
+}
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  line-height: 1.5;
+  background: #fff;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.075);
+}
+.workout-details h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+}
+.workout-details strong {
+  color: var(--textprimary);
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label,
+input {
+  display: block;
+}
+input {
+  padding: 12px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 12px;
+  background: #ffefef;
+  border: 2px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
