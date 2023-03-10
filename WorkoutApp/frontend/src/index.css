@@ -87,9 +87,10 @@ input {
   margin-top: 12px;
   margin-bottom: 20px;
   width: 100%;
-  border: 2px solid #ddd;
+  border: 1px solid var(--textsecondary);
   border-radius: 8px;
   box-sizing: border-box;
+  transition: 0.25s;
 }
 form button {
   background: var(--primary);
@@ -97,14 +98,24 @@ form button {
   color: #fff;
   padding: 12px;
   font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.25s;
+}
+form button:hover {
+  background: #0284c7;
 }
 div.error {
   padding: 12px;
-  background: #ffefef;
-  border: 2px solid var(--error);
+  background: #fef2f2;
+  border: 1px solid var(--error);
   color: var(--error);
   border-radius: 4px;
   margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
 }
